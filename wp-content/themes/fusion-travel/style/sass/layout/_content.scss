@@ -1,0 +1,45 @@
+.welcome {
+  width: 80%;
+  margin: 0 auto;
+  padding: 130px 0;
+  font-family: $regular;
+  .title, .description {
+    text-align: center;
+  }
+  .title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #757575;
+    margin-bottom: 40px;
+  }
+}
+.welcome-posts {
+  @include display-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.welcome-item {
+  width: 25%;
+  .icon {
+    height: 50px;
+    margin-bottom: 15px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .item-title {
+    font-family: $medium;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .item-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #757575;
+  }
+}

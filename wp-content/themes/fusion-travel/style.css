@@ -1,0 +1,455 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+.intro {
+  height: 100vh;
+}
+
+.main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 0;
+  border-bottom: 1px solid #8795a9;
+}
+.main .naw-wrapp {
+  display: inline-block;
+}
+.main .main-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.main .main-nav li {
+  margin-right: 10px;
+}
+.main .main-nav li a {
+  font-family: Roboto-Regular, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.main .main-nav li a:hover {
+  color: #fbad27;
+}
+.main .hot-line {
+  font-family: Roboto-Regular, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.main .hot-line .fa-phone {
+  margin-right: 5px;
+}
+
+.current-menu-item a {
+  color: #fbad27 !important;
+}
+
+.intro-block {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.intro-block h1, .intro-block h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.intro-block h1 {
+  font-family: Roboto-Bold, Arial, sans-serif;
+  font-size: 72px;
+}
+.intro-block h2 {
+  font-family: Roboto-Regular, Arial, sans-serif;
+  font-size: 20px;
+}
+
+.btn-style {
+  display: inline-block;
+  font-family: Roboto-Regular, Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px 50px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  background: #fbad27;
+}
+.btn-style:hover {
+  color: #fbad27;
+  background: #fff;
+}
+
+#button-menu {
+  display: none;
+  background-color: transparent;
+  background: none;
+  border: 1px solid transparent;
+  outline: none;
+}
+#button-menu:hover {
+  cursor: pointer;
+}
+#button-menu span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+a, button {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gray-bg {
+  background-color: #808080;
+}
+
+.default-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.welcome {
+  width: 80%;
+  margin: 0 auto;
+  padding: 130px 0;
+  font-family: Roboto-Regular, Arial, sans-serif;
+}
+.welcome .title, .welcome .description {
+  text-align: center;
+}
+.welcome .title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.welcome .description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+  margin-bottom: 40px;
+}
+
+.welcome-posts {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.welcome-item {
+  width: 25%;
+}
+.welcome-item .icon {
+  height: 50px;
+  margin-bottom: 15px;
+}
+.welcome-item .icon img {
+  max-width: 100%;
+  height: auto;
+}
+.welcome-item .item-title {
+  font-family: Roboto-Medium, Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.welcome-item .item-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #757575;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.footer-nav {
+  display: inline-block;
+}
+.footer-nav li {
+  margin: 5px 0;
+}
+.footer-nav li a {
+  font-family: Roboto-Regular, Arial, sans-serif;
+  font-size: 16px;
+  color: #757575;
+}
+.footer-nav li a:hover {
+  color: #fbad27;
+}
+
+.address, .email, .phone {
+  font-family: Roboto-Regular, Arial, sans-serif;
+  font-size: 16px;
+  color: #757575;
+  line-height: 22px;
+}
+
+.footer-block {
+  width: 25%;
+}
+.footer-block h3 {
+  font-family: Roboto-Medium, Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-icons li {
+  margin-right: 10px;
+}
+.social-icons li a {
+  display: block;
+  text-align: center;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background: #616161;
+  color: #fff;
+}
+.social-icons li a:hover {
+  background: #fbad27;
+}
+
+.copyright {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #e4e4e4;
+}
+.copyright p {
+  font-family: Roboto-Regular, Arial, sans-serif;
+  font-size: 16px;
+  color: #757575;
+  line-height: 22px;
+}
+
+@media (min-width: 993px) {
+  .nav-wrapp {
+    display: block !important;
+  }
+}
+@media (max-width: 992px) {
+  .intro .main {
+    padding: 20px 0;
+  }
+  .intro .intro-block h1 {
+    font-size: 40px;
+  }
+  .intro .intro-block h2 {
+    font-size: 15px;
+  }
+  .intro .btn-style {
+    padding: 5px 30px;
+  }
+
+  .nav-wrapp {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 63px;
+    left: 0;
+    right: 0;
+  }
+  .nav-wrapp .main-nav {
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+  }
+  .nav-wrapp .main-nav li {
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 0;
+  }
+
+  #button-menu {
+    display: block !important;
+  }
+
+  .welcome {
+    width: 100%;
+    padding: 80px 0;
+  }
+  .welcome .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .footer-block {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .intro .btn-style {
+    font-size: 16px;
+    padding: 10px 11px;
+  }
+
+  .welcome .welcome-item {
+    text-align: center;
+    width: 100%;
+    padding: 0 20%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+
+  .intro .intro-block {
+    left: 0;
+    right: 0;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .welcome {
+    padding: 40px 0;
+  }
+  .welcome .description {
+    font-size: 14px;
+  }
+
+  .footer-block {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-block .social-icons {
+    justify-content: center;
+  }
+
+  .copyright {
+    padding: 20px 0;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 576px) {
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,112 @@
+.intro {
+  height: 100vh;
+}
+.main {
+  @include display-flex;
+  justify-content: space-between;
+  padding: 45px 0;
+  border-bottom: 1px solid #8795a9;
+  .naw-wrapp {
+    display: inline-block;
+  }
+  .main-nav {
+    @include display-flex;
+    li {
+      margin-right: 10px;
+      a {
+        font-family: $regular;
+        font-size: 16px;
+        color: #fff;
+        &:hover {
+          color: #fbad27;
+        }
+      }
+    }
+  }
+  .hot-line {
+    font-family: $regular;
+    font-size: 16px;
+    color: #fff;
+    .fa-phone {
+      margin-right: 5px;
+    }
+  }
+}
+
+.current-menu-item a{
+  color: #fbad27 !important;
+}
+.intro-block {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  h1, h2 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: $bold;
+    font-size: 72px;
+  }
+  h2 {
+    font-family: $regular;
+    font-size: 20px;
+  }
+}
+
+.btn-style {
+  display: inline-block;
+  font-family: $regular;
+  font-size: 20px;
+  padding: 10px 50px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  background: #fbad27;
+  &:hover {
+    color: #fbad27;
+    background: #fff;
+  }
+}
+
+#button-menu {
+  display: none;
+  background-color: transparent;
+  background: none;
+  border: 1px solid transparent;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+  & span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: #fff;
+  }
+}
+
+a, button {
+  @include transition;
+}
+
+.gray-bg {
+  background-color: #808080;
+}
+
+.default-header {
+  @include display-flex;
+  justify-content: space-between;
+}
+
+body {
+  @include display-flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
