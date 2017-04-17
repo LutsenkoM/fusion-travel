@@ -3,6 +3,7 @@
 }
 .main {
   @include display-flex;
+  position: relative;
   justify-content: space-between;
   padding: 45px 0;
   border-bottom: 1px solid #8795a9;
